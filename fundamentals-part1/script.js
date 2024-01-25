@@ -1,1 +1,3 @@
-let js = 'amazing';
+'use strict';
+
+const age = 23;

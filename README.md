@@ -14,7 +14,7 @@ It is required to have Node.js, npm, git installed to run this project.
 
 > To check the versions of git, Node.js, and npm installed on your computer, run the command `git --version && node --version && npm --version` in your command-line terminal.
 
-## What will you learn
+## What I learned so far
 
 - JavaScript Fundamentals
   - let, const and var

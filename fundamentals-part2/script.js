@@ -89,30 +89,59 @@
 // ARRAYS
 // ********************************
 
-const friends = ['John', 'Mary'];
-console.log(friends);
+// const friends = ['John', 'Mary'];
+// console.log(friends);
 
-const years = new Array(1991, 1992, 1993);
-console.log(years);
+// const years = new Array(1991, 1992, 1993);
+// console.log(years);
 
-console.log(friends[0]);
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
+// console.log(friends[0]);
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
 
-friends[1] = 'Jane';
-console.log(friends);
+// friends[1] = 'Jane';
+// console.log(friends);
 
-const firstName = 'John';
-const john = [firstName, 'Schmedtman', 2034 - 1991, friends];
-console.log(john);
+// const firstName = 'John';
+// const john = [firstName, 'Schmedtman', 2034 - 1991, friends];
+// console.log(john);
 
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
-const yearsArr = [1990, 1991, 1992, 1993];
-console.log(calcAge(yearsArr[0]));
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const yearsArr = [1990, 1991, 1992, 1993];
+// console.log(calcAge(yearsArr[0]));
 
-const ages = [calcAge(yearsArr[0])];
-console.log(ages);
+// const ages = [calcAge(yearsArr[0])];
+// console.log(ages);
+
+////////////////////////////////////////////////////////////////////
+
+// const friends = ['John', 'Mary', 'Peter'];
+// // Add elements
+// friends.push('Jane');
+// console.log(friends);
+// friends.unshift('John');
+// console.log(friends);
+
+// // Remove elements
+// friends.pop();
+// const popped = friends.pop();
+// console.log(popped);
+// console.log(friends);
+// friends.shift();
+// console.log(friends);
+
+// console.log(friends.indexOf('Mary'));
+
+// friends.push(23);
+// console.log(friends);
+// console.log(friends.includes('Mary'));
+// console.log(friends.includes('Peter'));
+// console.log(friends.includes(23));
+
+// if (friends.includes('Mary')) {
+//   console.log('Mary is in the friends array');
+// }
 
 ////////////////////////////////////////////////////////////////////

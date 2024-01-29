@@ -1,5 +1,9 @@
 'use strict';
 
+// FUNCTIONS
+
+// ********************************
+
 // function logger() {
 //   console.log('H');
 // }
@@ -63,21 +67,22 @@
 // console.log(fruitProcessor2(2, 3));
 
 ////////////////////////////////////////////////////////////////////
-const calcAge = function (birthYear) {
-  return 2037 - birthYear;
-};
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-  const age = calcAge(birthYear);
-  const retirement = 65 - age;
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
 
-  if (retirement > 0) {
-    console.log(`${firstName} retires in ${retirement} years.`);
-    return retirement;
-  } else {
-    return -1;
-  }
-};
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement} years.`);
+//     return retirement;
+//   } else {
+//     return -1;
+//   }
+// };
 
-console.log(yearsUntilRetirement(1991, 'John'));
-console.log(yearsUntilRetirement(1970, 'Mary'));
+// console.log(yearsUntilRetirement(1991, 'John'));
+// console.log(yearsUntilRetirement(1970, 'Mary'));
+////////////////////////////////////////////////////////////////////

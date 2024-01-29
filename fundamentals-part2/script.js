@@ -1,7 +1,6 @@
 'use strict';
 
 // FUNCTIONS
-
 // ********************************
 
 // function logger() {
@@ -85,4 +84,35 @@
 
 // console.log(yearsUntilRetirement(1991, 'John'));
 // console.log(yearsUntilRetirement(1970, 'Mary'));
+////////////////////////////////////////////////////////////////////
+
+// ARRAYS
+// ********************************
+
+const friends = ['John', 'Mary'];
+console.log(friends);
+
+const years = new Array(1991, 1992, 1993);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[1] = 'Jane';
+console.log(friends);
+
+const firstName = 'John';
+const john = [firstName, 'Schmedtman', 2034 - 1991, friends];
+console.log(john);
+
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+const yearsArr = [1990, 1991, 1992, 1993];
+console.log(calcAge(yearsArr[0]));
+
+const ages = [calcAge(yearsArr[0])];
+console.log(ages);
+
 ////////////////////////////////////////////////////////////////////

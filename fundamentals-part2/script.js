@@ -145,3 +145,39 @@
 // }
 
 ////////////////////////////////////////////////////////////////////
+
+// OBJECTS
+
+const john = {
+  firstName: 'John',
+  lastName: 'Schmedtman',
+  age: 2034 - 1991,
+  job: 'Software Engineer',
+  friends: ['Michael', 'Mary', 'Peter'],
+};
+console.log(john);
+console.log(john.firstName);
+console.log(john['firstName']);
+
+const nameKey = 'Name';
+console.log(john['first' + nameKey]);
+console.log(john['last' + nameKey]);
+
+//const interestedIn = prompt('What do you want?');
+// console.log(john['job']);
+
+// if (john[interestedIn]) {
+//   console.log(john[interestedIn]);
+// } else {
+//   console.log("I don't know about that");
+// }
+
+john.location = 'New York';
+john['twitter'] = '@tefsdf';
+console.log(john);
+
+const message = `${john.firstName} has ${john.friends.length} friends, 
+and his best friend is called ${john.friends[0]}`;
+console.log(message);
+
+////////////////////////////////////////////////////////////////////

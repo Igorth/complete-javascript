@@ -184,27 +184,30 @@
 
 // OBJECTS METHODS
 
-const john = {
-  firstName: 'John',
-  lastName: 'Schmedtman',
-  birthYear: 1991,
-  job: 'Software Engineer',
-  friends: ['Michael', 'Mary', 'Peter'],
-  hasDriverLicense: false,
+// const john = {
+//   firstName: 'John',
+//   lastName: 'Schmedtman',
+//   birthYear: 1991,
+//   job: 'Software Engineer',
+//   friends: ['Michael', 'Mary', 'Peter'],
+//   hasDriverLicense: false,
 
-  calAge: function () {
-    this.age = 2034 - this.birthYear;
-    return this.age;
-  },
+//   calAge: function () {
+//     this.age = 2034 - this.birthYear;
+//     return this.age;
+//   },
 
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calAge()}--year old ${this.job},
-    and he has ${
-      this.hasDriverLicense ? 'a driver license' : 'no driver license'
-    }`;
-  },
-};
+//   getSummary: function () {
+//     return `${this.firstName} is a ${this.calAge()}--year old ${this.job},
+//     and he has ${
+//       this.hasDriverLicense ? 'a driver license' : 'no driver license'
+//     }`;
+//   },
+// };
 
-console.log(john.calAge());
-console.log(john.age);
-console.log(john.getSummary());
+// console.log(john.calAge());
+// console.log(john.age);
+// console.log(john.getSummary());
+////////////////////////////////////////////////////////////////////
+
+// LOOPS

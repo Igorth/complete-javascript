@@ -53,32 +53,92 @@ the corresponding tip, calculated based on the rules above
   Test the function using a bill value of 100.
 */
 
-const calcTip = bill => {
-  const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-  return tip;
+// const calcTip = bill => {
+//   const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+//   return tip;
+// };
+
+// // function calcTip(bill) {
+// //   const tip = bill * 0.15;
+// //   return tip;
+// // }
+
+// /*
+// And now let's use arrays! So, create an array called bills containing the
+// test data below.
+// */
+// const bills = [125, 555, 44];
+
+// /**
+//  * Create an array called tips containing the tip value for each bill,
+//  * calculated from the function you created before.
+//  *
+//  */
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// /**
+//  * BONUS: Create an array totals containing the total values,
+//  * so the bill + tip.
+//  */
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(totals);
+
+////////////////////////////////////////////////////////////////////
+
+// Challenge 3
+
+/**
+ * For each of them, create an object with properties
+ * for their full name, mass, and height
+ * (Mark Miller and John Smith). Name these objects
+ * as mark and john, and their properties exactly
+ * as fullName, mass and height.
+ */
+
+/**
+ * Create a calcBMI method on each object to calculate
+ * the BMI (the same method on both objects).
+ * Assign the BMI value to a property, and also
+ * return it from the method.
+ */
+
+/**
+ * Log to the console who has the higher BMI,
+ * together with the full name and the respective BMI.
+ * Example: "John Smith's BMI (28.3) is higher than
+ * Mark Miller's (23.9)!".
+ */
+
+const mark = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
 };
 
-// function calcTip(bill) {
-//   const tip = bill * 0.15;
-//   return tip;
-// }
+const john = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
 
-/*
-And now let's use arrays! So, create an array called bills containing the 
-test data below.
-*/
-const bills = [125, 555, 44];
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+mark.calcBMI();
+john.calcBMI();
 
-/**
- * Create an array called tips containing the tip value for each bill,
- * calculated from the function you created before.
- *
- */
-const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-
-/**
- * BONUS: Create an array totals containing the total values,
- * so the bill + tip.
- */
-const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(totals);
+if (mark.bmi > john.bmi) {
+  console.log(
+    `${mark.fullName} is a BMI (${mark.bmi}) is higher than ${john.fullName} (${john.bmi})`
+  );
+} else {
+  console.log(
+    `${john.fullName} is a BMI (${john.bmi}) is higher than ${mark.fullName} (${mark.bmi})`
+  );
+}

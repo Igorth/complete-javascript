@@ -148,36 +148,63 @@
 
 // OBJECTS
 
+// const john = {
+//   firstName: 'John',
+//   lastName: 'Schmedtman',
+//   age: 2034 - 1991,
+//   job: 'Software Engineer',
+//   friends: ['Michael', 'Mary', 'Peter'],
+// };
+// console.log(john);
+// console.log(john.firstName);
+// console.log(john['firstName']);
+
+// const nameKey = 'Name';
+// console.log(john['first' + nameKey]);
+// console.log(john['last' + nameKey]);
+
+// //const interestedIn = prompt('What do you want?');
+// // console.log(john['job']);
+
+// // if (john[interestedIn]) {
+// //   console.log(john[interestedIn]);
+// // } else {
+// //   console.log("I don't know about that");
+// // }
+
+// john.location = 'New York';
+// john['twitter'] = '@tefsdf';
+// console.log(john);
+
+// const message = `${john.firstName} has ${john.friends.length} friends,
+// and his best friend is called ${john.friends[0]}`;
+// console.log(message);
+
+////////////////////////////////////////////////////////////////////
+
+// OBJECTS METHODS
+
 const john = {
   firstName: 'John',
   lastName: 'Schmedtman',
-  age: 2034 - 1991,
+  birthYear: 1991,
   job: 'Software Engineer',
   friends: ['Michael', 'Mary', 'Peter'],
+  hasDriverLicense: false,
+
+  calAge: function () {
+    this.age = 2034 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calAge()}--year old ${this.job},
+    and he has ${
+      this.hasDriverLicense ? 'a driver license' : 'no driver license'
+    }`;
+  },
 };
-console.log(john);
-console.log(john.firstName);
-console.log(john['firstName']);
 
-const nameKey = 'Name';
-console.log(john['first' + nameKey]);
-console.log(john['last' + nameKey]);
-
-//const interestedIn = prompt('What do you want?');
-// console.log(john['job']);
-
-// if (john[interestedIn]) {
-//   console.log(john[interestedIn]);
-// } else {
-//   console.log("I don't know about that");
-// }
-
-john.location = 'New York';
-john['twitter'] = '@tefsdf';
-console.log(john);
-
-const message = `${john.firstName} has ${john.friends.length} friends, 
-and his best friend is called ${john.friends[0]}`;
-console.log(message);
-
-////////////////////////////////////////////////////////////////////
+console.log(john.calAge());
+console.log(john.age);
+console.log(john.getSummary());

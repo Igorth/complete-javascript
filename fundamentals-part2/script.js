@@ -246,25 +246,50 @@
 // console.log(ages);
 
 // Continue and break
-const johnArray = [
-  'John',
-  'Smith',
-  2035 - 1991,
-  'teacher',
-  ['Michael', 'Mary', 'Peter'],
-  true,
-];
-console.log('----CONTINUE----');
-for (let i = 0; i < johnArray.length; i++) {
-  if (typeof johnArray[i] !== 'string') {
-    continue;
+// const johnArray = [
+//   'John',
+//   'Smith',
+//   2035 - 1991,
+//   'teacher',
+//   ['Michael', 'Mary', 'Peter'],
+//   true,
+// ];
+// console.log('----CONTINUE----');
+// for (let i = 0; i < johnArray.length; i++) {
+//   if (typeof johnArray[i] !== 'string') {
+//     continue;
+//   }
+//   console.log(johnArray[i]);
+// }
+// console.log('----BREAK----');
+// for (let i = 0; i < johnArray.length; i++) {
+//   if (typeof johnArray[i] === 'number') {
+//     break;
+//   }
+//   console.log(johnArray[i]);
+// }
+
+////////////////////////////////////////////////////////////////////
+
+// LOOPS
+
+// const johnArray = [
+//   'John',
+//   'Smith',
+//   2035 - 1991,
+//   'teacher',
+//   ['Michael', 'Mary', 'Peter'],
+//   true,
+// ];
+
+// for (let i = johnArray.length + 1; i >= 0; i--) {
+//   console.log(johnArray[i]);
+// }
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`Exercise ${exercise}`);
+
+  for (let rep = 1; rep <= 5; rep++) {
+    console.log(`  Repetition ${rep}`);
   }
-  console.log(johnArray[i]);
-}
-console.log('----BREAK----');
-for (let i = 0; i < johnArray.length; i++) {
-  if (typeof johnArray[i] === 'number') {
-    break;
-  }
-  console.log(johnArray[i]);
 }

@@ -212,6 +212,59 @@
 
 // LOOPS
 
-for (let i = 1; i <= 10; i++) {
-  console.log(`Lifting repetitions ${i} times`);
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`Lifting repetitions ${i} times`);
+// }
+
+// const johnArray = [
+//   'John',
+//   'Smith',
+//   2035 - 1991,
+//   'teacher',
+//   ['Michael', 'Mary', 'Peter'],
+//   true,
+// ];
+
+// const types = [];
+
+// for (let i = 0; i < johnArray.length; i++) {
+//   console.log(johnArray[i]);
+//   types.push(typeof johnArray[i]);
+// }
+
+// console.log(types);
+// for (let i = 0; i < types.length; i++) {
+//   console.log(types[i]);
+// }
+
+// const years = [1990, 1991, 1992];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2034 - years[i]);
+// }
+// console.log(ages);
+
+// Continue and break
+const johnArray = [
+  'John',
+  'Smith',
+  2035 - 1991,
+  'teacher',
+  ['Michael', 'Mary', 'Peter'],
+  true,
+];
+console.log('----CONTINUE----');
+for (let i = 0; i < johnArray.length; i++) {
+  if (typeof johnArray[i] !== 'string') {
+    continue;
+  }
+  console.log(johnArray[i]);
+}
+console.log('----BREAK----');
+for (let i = 0; i < johnArray.length; i++) {
+  if (typeof johnArray[i] === 'number') {
+    break;
+  }
+  console.log(johnArray[i]);
 }

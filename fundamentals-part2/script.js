@@ -286,10 +286,30 @@
 //   console.log(johnArray[i]);
 // }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`Exercise ${exercise}`);
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`Exercise ${exercise}`);
 
-  for (let rep = 1; rep <= 5; rep++) {
-    console.log(`  Repetition ${rep}`);
+//   for (let rep = 1; rep <= 5; rep++) {
+//     console.log(`  Repetition ${rep}`);
+//   }
+// }
+
+////////////////////////////////////////////////////////////////////
+
+// WHILE LOOPS
+let rep = 1;
+while (rep <= 5) {
+  console.log(`Repetition ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`Dice ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+
+  if (dice === 6) {
+    console.log('You rolled a 6!');
   }
 }

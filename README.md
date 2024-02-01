@@ -1,4 +1,4 @@
-# javascript-before-react
+# complete-javascript
 
 Repository for remember some structure of **JavaScript** before starting [**React**](https://reactjs.org) or other framework.
 
